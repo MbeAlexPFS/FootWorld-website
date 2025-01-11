@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootWorld - Connexion -</title>
+    <link rel="stylesheet" href="../asset/app.css">
+</head>
+<header class="flex between v-center p m bg-blue text-white raduis shadow-black gap">
+    <div class="logo">
+        .FootWorld
+    </div>
+    <div class="flex gap v-center ">
+        <a class="link" href="/">Accueil</a>
+        <a class="link" href="match.html">Matches</a>
+        <a class="link" href="about.html">A propos</a>
+        <a class="link active" href="">Connexion</a>
+    </div> 
+</header>
+<body>
+    <div class="flex center column gap v-center m-2">
+        <h1 class="text-white"><em>Connexion</em></h1>
+        <div class="flex center m gap"> 
+            <div class="flex column v-center backdrop p raduis shadow-black font">
+                <p>Veuillez remplir les champs ci&nbsp;dessous:</p>   
+                <form action="../index.html" method="get">
+                    <div class="flex between v-center m gap">
+                        <div class="flex column">
+                            <label for="nom">Nom</label>
+                            <input class="input " id="nom" type="text" placeholder="Entrer votre nom" required>
+                        </div>
+                        <div class="flex column">
+                            <label for="prenom">Prenom</label>
+                            <input class="input " id="prenom" type="text" placeholder="Entrer votre prenom" required>
+                        </div>
+                    </div>
+                    <div class="flex column m">
+                        <label for="email">Email</label>
+                        <input class="input" type="email" placeholder="Entrer votre email" required>
+                    </div>
+                    <div class="flex column m">
+                        <label for="mdp">Mot de passe</label>
+                        <input class="input" type="password" placeholder="Entrer votre mot de passe" required>
+                    </div>
+                    <p class="text-center m">Ou connecter vous avec:</p>
+                    <div class="flex gap center m hold">
+                        <a href="#"><img class="ico" src="../ressource/facebook-100.png"></a>
+                        <a href="#"><img class="ico" src="../ressource/instagram-100.png"></a>
+                        <a href="#"><img class="ico" src="../ressource/google-100.png"></a>          
+                    </div>
+                    <div class="flex between m">
+                        <div>
+                            <input class="btn m" type="submit" value="Se connecter">
+                            <input class="btn m" type="reset" value="Annuler">
+                        </div>
+                        <input class="btn disabled m" type="button" value="S'inscrire" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="text-center m p shadow-black text-white raduis bg-blue">
+    Tous droits reservés CakePalace.com 2025-2026
+</footer>
+</html>
